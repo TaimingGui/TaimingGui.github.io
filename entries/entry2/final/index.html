@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Experience Hall</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Music Experience Hall</h1>
+        <p> A place to immerse yourself in music</p>
+    </header>
+    
+    <main>
+       <section class="mood-selector">
+    <h2>Choose your mood</h2>
+    <ul>
+        <li id="happy">
+         <a href="https://www.youtube.com/watch?v=ApXoWvfEYVU" class="mood-link" style="background-color: #FFD700;">
+                Happy🥰
+                <p> Music full of joy and happiness</p>
+            </a>
+        </li>
+        <li id="calm">
+            <a href="https://www.youtube.com/watch?v=KJL0kGIFmsw" class="mood-link" style="background-color: #00CED1;">
+                Peaceful🙂
+                <p>Quiet and peaceful music——Suitable for learning and thinking</p>
+            </a>
+        </li>
+        <li id="energetic">
+            <a href="https://www.youtube.com/watch?v=NXRot9BF5ds" class="mood-link" style="background-color: #FF6347;">
+                Dynamic🤩
+                <p>Energetic and dynamic music</p>
+            </a>
+        </li>
+        <li id="Anxious">
+            <a href="https://www.youtube.com/watch?v=y2bVIBwpCTA" class="mood-link" style="background-color: #FF0000;">
+                Anxious😡
+                <p>Relieve anxiety and anger and make you happy</p>
+            </a>
+        </li>
+        <li id="Empty">
+            <a href="https://www.youtube.com/watch?v=Bm5iA4Zupek" class="mood-link" style="background-color: #C0C0C0;">
+                Empty😶
+                <p>Inspirational and uplifting music</p>
+            </a>
+        </li>
+    </ul>
+</section>
+
+
+        
+        <section class="music-player">
+            <h2>Daily Music player</h2>
+            <div class="song-info">
+                <h3>Just the Two of Us</h3>
+                <p> Artist: Bill Withers</p>
+                <p>Released: 1980</p>
+                <p>Album: Winelight</p>
+                <p>Artists: Bill Withers, Grover Washington, Jr.</p>
+                <p>Genres: Jazz, Rhythm and blues, Soul music</p>
+                <p>Nominations: Grammy Award for Record of the Year</p>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KYwA5k00p2I?si=rIPkkTxIYul_mAId" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+    
+        <section class="music-lyrics">
+            <h2>Lyrics</h2>
+            <h3>Song title: Just the Two of Us</h3>
+            <ul>
+                <li>I see the crystal raindrops fall</li>
+                <li>And the beauty of it all</li>
+                <li>Is when the sun comes shining through</li>
+                <li>To make those rainbows in my mind</li>
+                <li>When I think of you sometime</li>
+                <li>And I wanna spend some time with you</li>
+                <li>Just the two of us</li>
+                <li>We can make it if we try</li>
+                <li>Just the two of us</li>
+                <li>(Just the two of us)</li>
+                <li>Just the two of us</li>
+                <li>Building castles in the sky</li>
+                <li>Just the two of us</li>
+                <li>You and I</li>
+            </ul>
+        </section>
+
+        <section class="music-recommendation">
+            <h2>Music recommendation</h2>
+            <p>I recommend the following music for you:</p>
+            <ul>
+                <li>Slime You Out--Drake,SZA</li>
+                <li>Feather--sabrina carpenter</li>
+                <li>I Wonder--Ye</li>
+                <li>P.Y.T--Masiwei,Asen</li>
+                <li>Complex--Zion.T,G-Dragon</li>
+            </ul>
+        </section>
+
+        <section>
+        <h2>Do some easy research</h2>
+        <p>What kind of music do you like best？</p>
+
+<label for="music-choice">Choose a music category:</label>
+<input list="music-categories" id="music-choice" name="music-choice" />
+
+<datalist id="music-categories">
+  <option value="R&B"></option>
+  <option value="Pop"></option>
+  <option value="Hiphop"></option>
+  <option value="Rock"></option>
+  <option value="Mood"></option>
+  <option value="Folk"></option>
+  <option value="Absolute"></option>
+  <option value="Jazz"></option>
+  <option value="Electronic"></option>
+  <option value="Metal"></option>
+</datalist>
+<nav>
+
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Please enter your email address</p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" pattern=".+@globex\.com" size="30" required />
+        </section>
+
+        <section class="memories">
+            <h2>Memories</h2>
+            <p>Do you remember the day when you first started enjoying music?</p>
+            <label for="start">Start month:</label>
+            <input type="month" id="start" name="start" min="2018-03" value="2018-05" />
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; Music Experience Hall</p>
+    </footer>
+</body>
+</html>
