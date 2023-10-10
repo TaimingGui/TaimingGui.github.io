@@ -1,138 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* 新增的样式用于标题 */
-    .title-container {
-      text-align: right; /* 文字右对齐 */
-      margin-top: 20px;
-      position: relative;
-    }
-
-    .title {
-      font-size: 48px; /* 更大的文字大小 */
-      color: #fff;
-      font-weight: bold;
-      text-transform: uppercase;
-      display: inline-block;
-      cursor: pointer;
-      margin-right: 20px; /* 调整文字与发光方块的间距 */
-      transition: transform 0.3s, color 0.3s;
-    }
-
-    .title:hover {
-      transform: scale(1.2);
-      color: purple;
-      animation: none; /* 移除标题的摇晃动画 */
-    }
-
-    /* 循环滚动的标题和文字颜色变化 */
-    .scrolling-title {
-      overflow: hidden;
-      white-space: nowrap;
-      animation: scrollText 10s linear infinite, colorChange 3s infinite;
-    }
-
-    @keyframes scrollText {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-
-    @keyframes colorChange {
-      0% {
-        color: red;
-      }
-      25% {
-        color: blue;
-      }
-      50% {
-        color: green;
-      }
-      75% {
-        color: orange;
-      }
-      100% {
-        color: red;
-      }
-    }
-  </style>
-  <title>Swipe your mouse</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- 此处的 href 属性应该指向您的 CSS 文件 -->
 </head>
 <body>
-  <div class="container">
-    <!-- 立方体代码 -->
-    <div class="cube">
-      <div style="--x:-1; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
-      <div style="--x:-0; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
-      <div style="--x:1; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
+    <div class="title">
+        <div class="container">
+            <div class="neon">Album </div>
+            <div class="flux">store </div>
+        </div>
     </div>
-    <div class="cube">
-      <div style="--x:-1; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
-      <div style="--x:-0; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
-      <div style="--x:1; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
+
+    <div id="grid" class="grid">
+        <a class="card" href="https://www.instagram.com/p/BnrVNA_F95p/" target="_blank">
+            <img src="https://i.scdn.co/image/ab67616d0000b273696b4e67423edd64784bfbb4" alt="Photo 1">
+        </a>
+        <a class="card" href="https://www.instagram.com/p/BloI_FblUVy/" target="_blank">
+            <img src="https://i.scdn.co/image/ab67616d00001e02a18eee303d4e1c0c09edbcb3" alt="Photo 2">
+        </a>
+        <a class="card" href="https://www.instagram.com/p/BoKSUPGg5al/" target="_blank">
+            <img src="https://i.scdn.co/image/ab67616d0000b273e986304881623287fde9a048" alt="Photo 3">
+        </a>
+        <a class="card" href="https://www.instagram.com/p/B1rXN_roTv4/" target="_blank">
+            <img src="https://i.scdn.co/image/ab67616d00001e025e5869e295f034bc13dcf69e" alt="Photo 4">
+        </a>
+        <a class="card" href="https://www.instagram.com/p/BsdpIh6BxPB/" target="_blank">
+            <img src="https://i.scdn.co/image/ab67616d0000b273a58c95f003cc0fd7c7bfeff0" alt="Photo 5">
+        </a>
+        <a class="card" href="https://www.instagram.com/p/BnT_d4XFuJJ/" target="_blank">
+            <img src="https://i.scdn.co/image/ab67616d0000b273531a2800a2d10642a366604d" alt="Photo 6">
+        </a>
+        <a class="card" href="https://www.instagram.com/p/Bl8mOXKlp7N/" target="_blank">
+            <img src="https://i.scdn.co/image/ab67616d00001e023b2df9103b8b1bad69ec4aa9" alt="Photo 7">
+        </a>
+        <a class="card" href="https://www.instagram.com/p/BlYb96KlH99/" target="_blank">
+            <img src="https://i.scdn.co/image/ab67616d0000b2730cd942c1a864afa4e92d04f2" alt="Photo 8">
+        </a>
+        <a class="card" href="https://www.example.com" target="_blank"> <!-- 新图片链接 -->
+            <img src="https://i.scdn.co/image/ab67616d0000b273681a948067ce4858ce5ee4d3" alt="Photo 9"> <!-- 新图片 URL -->
+        </a>
     </div>
-    <div class="cube">
-      <div style="--x:-1; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
-      <div style="--x:-0; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
-      <div style="--x:1; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
-    </div>
+    <div class="container">
+  <div class="box">
+    <img src="https://i.scdn.co/image/ab6761610000e5eb95e6ff29905ce9692dbdb12a">
+    <span> 1</span>
   </div>
-  <!-- 新增标题容器和标题 -->
-  <div class="title-container">
-    <h1 class="title">Swipe your mouse</h1>
+  <div class="box">
+    <img src="https://i.scdn.co/image/ab67616d0000b273d9194aa18fa4c9362b47464f">
+    <span> 2</span>
   </div>
-  <!-- 新增滚动标题 -->
-  <div class="scrolling-title">
-    <span>Find out what's in here</span>
+  <div class="box">
+    <img src="https://i.scdn.co/image/ab67616d0000b2737005885df706891a3c182a57">
+    <span> 3</span>
   </div>
- </div>
-<img src="https://i.pinimg.com/originals/a1/77/df/a177dfc84703c31afa0d501ccf43fe4f.gif" alt="Hidden GIF" class="hidden-gif">
+  <div class="box">
+    <img src="https://i.scdn.co/image/ab67616d0000b273297a58da577112a55b87f1d4">
+    <span> 3</span>
+  </div>
 </div>
+    
+    <div class='alfa' title='Primavera'>
+        <div class='bravo' title='Otoño'>
+            <textarea readonly cols='0' rows='0' class='charly'></textarea>
+        </div>
+    </div>
+
 </body>
 </html>
-
 
