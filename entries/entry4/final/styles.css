@@ -1,231 +1,79 @@
-/* 全局样式 */
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #000; /* 全黑背景 */
-}
-
-.container {
+.lyrics-container {
     position: relative;
-    top: -80px;
-    transform: skewY(-20deg);
-    animation: animate 5s linear infinite;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-@keyframes animate {
-    0% {
-        filter: hue-rotate(0deg);
-    }
-    100% {
-        filter: hue-rotate(360deg);
-    }
-}
-
-.container .cube {
-    position: relative;
-    z-index: 2;
-}
-
-.container .cube:nth-child(2) {
-    z-index: 1;
-    transform: translate(-60px, -60px);
-}
-
-.container .cube:nth-child(3) {
-    z-index: 3;
-    transform: translate(60px, 60px);
-}
-
-.container .cube div {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    transform: translate(calc(-70px * var(--x)), calc(-70px * var(--y)));
-}
-
-.container .cube div span {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-color: #dcdcdc;
-    z-index: calc(1 * var(--i));
-    transition: 1.5s;
-}
-
-.container .cube div span:hover {
-    transition: 0s;
-    background-color: #ef4149;
-    filter: drop-shadow(0 0 30px #ef4149);
-}
-
-.container .cube div span::before {
-    content: '';
-    position: absolute;
-    left: -40px;
-    width: 40px;
+.lyrics-container img {
+    width: 100%;
     height: 100%;
-    background-color: #fff;
-    transform-origin: right;
-    transform: skewY(45deg);
-    transition: 1.5s;
+    object-fit: cover;
 }
 
-.container .cube div span:hover::before {
-    transition: 0s;
-    background-color: #f75d64;
-}
-
-.container .cube div span::after {
-    content: '';
+.lyrics {
     position: absolute;
-    top: -40px;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background-color: #f2f2f2;
-    transform-origin: bottom;
-    transform: skewX(45deg);
-    transition: 1.5s;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
 }
 
-.container .cube div span:hover::after {
-    transition: 0s;
-    background-color: #f14e55;
+.lyrics p {
+    margin: 10px 0;
+    font-size: 35px; /* 放大文字 */
+    font-weight: 1000; /* 设置更粗体，这里使用800表示更粗 */
+    color: rgb(255, 255, 255); /* 文字颜色白色 */
+    transition: opacity 0.5s; /* 添加渐变效果 */
 }
 
-/* 新增的样式用于标题 */
-.title-container {
-    text-align: right; /* 文字右对齐 */
-    margin-top: 20px;
-    position: relative;
-}
+.lyrics p:hover {
+    opacity: 0.3; /* 鼠标悬停时透明化 */
+    }
 
-.title {
-    font-size: 48px; /* 更大的文字大小 */
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    display: inline-block;
-    cursor: pointer;
-    margin-right: 20px; /* 调整文字与发光方块的间距 */
-    transition: transform 0.3s, color 0.3s;
-}
+    .lyrics p {
+        animation: sideSlide 5s ;
+    }
+    
+    @keyframes sideSlide {
+        0%{
+            opacity: 0;
+        }
+        15%{
+            opacity: 0.2;
+        }
+        25%{
+            opacity: 0.4;
+        }
+        50%{
+            opacity: 0.6;
+        }
+        75%{
+            opacity: 0.8;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
 
-.title:hover {
-    transform: scale(1.2);
-    color: purple;
-    animation: none; /* 移除标题的摇晃动画 */
-}
-
-@keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-}
-
-/* 新增的样式用于标题 */
-.title-container {
-  text-align: right; /* 文字右对齐 */
-  margin-top: 20px;
-  position: relative;
-}
-
-.title {
-  font-size: 78px; /* 更大的文字大小 */
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: inline-block;
-  cursor: pointer;
-  margin-right: 30px; /* 调整文字与发光方块的间距 */
-  transition: transform 0.3s, color 0.3s;
-}
-
-.title:hover {
-  transform: scale(1.2);
-  color: purple;
-  animation: none; /* 移除标题的摇晃动画 */
-}
-
-@keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
-}
-
-/* 循环滚动的标题和文字颜色变化 */
-.scrolling-title {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: scrollText 10s linear infinite, colorChange 3s infinite;
-  position: absolute; /* 调整文字的位置到上方 */
-  top: 20px; /* 调整文字的垂直位置 */
-}
-
-@keyframes scrollText {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes colorChange {
-  0% {
-    color: red;
-  }
-  25% {
-    color: blue;
-  }
-  50% {
-    color: green;
-  }
-  75% {
-    color: orange;
-  }
-  100% {
-    color: red;
-  }
-
-}
-
-/* 新增的样式用于隐藏和显示 GIF 图片 */
-.hidden-gif {
-    opacity: 0; /* 初始时透明隐藏 */
-    transition: opacity 0.5s ease-in-out; /* 添加过渡效果 */
-}
-
-/* 当鼠标悬停在 GIF 图片上时，显示出来 */
-.hidden-gif:hover {
-    opacity: 1;
-}
-
-
-}
-/* 新的 GIF 的样式 */
-.top-gif {
+.tabbar{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0; /* 初始时隐藏 GIF */
-    transition: opacity 0.5s ease-in-out;
+    top: 31%;
+    left: 57%;
 }
-
-/* 当鼠标悬停时显示 GIF */
-.top-gif:hover {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    z-index: 9999; /* 确保在最顶层 */
-}”
+.tabbar:hover button{
+    opacity: 0.3;
+    transition: 2s;
+}
+a{
+    text-decoration: none;
+    font-size: 33px;
+    color: #d9b7f8;
+}
+a:hover{
+    opacity: 0.5;
+}

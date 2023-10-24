@@ -1,58 +1,198 @@
 <!DOCTYPE html>
-    <title>Music experience hall</title>
+<html>
+
+<head>
+    <title>星空</title>
+    <style>
+        body {
+            width: 1024px;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            /* 使用黑色背景 */
+        }
+
+        .stars {
+            position: fixed;
+            /* 使用fixed，使星空背景固定 */
+            width: 100%;
+            height: 100%;
+            background: url('your-background-image.jpg') center center fixed no-repeat;
+            /* 设置星空背景图像 */
+            background-size: cover;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            opacity: 0.8;
+            border-radius: 50%;
+        }
+        .lyrics-container{
+            width: 100%;
+            /* overflow: hidden; */
+        }
+
+        .lyrics p {
+            margin: 20px 0;
+            /* 段落之间的垂直间距 */
+            color: #fff;
+            /* 文本颜色为白色 */
+            text-shadow: 1px 1px 2px #000;
+            /* 文本阴影效果，增强可读性 */
+        }
+
+        .lyrics p:first-child {
+            font-size: 60px;
+            /* 第一行较大字体，标题样式 */
+            font-weight: bold;
+        }
+
+        .lyrics p:not(:first-child) {
+            font-size: 16px;
+            /* 其他行较小字体 */
+        }
+
+
+        .scrolling {
+            width: 100%;
+           position: absolute;
+        }
+    
+
+        .scrolling p {
+            /* padding-left: 100%; */
+            animation: fade 10s linear infinite;
+
+        }
+
+        @keyframes fade {
+            0% {
+                transform: translatex(0);
+            }
+
+            100% {
+                transform: translatex(-100%);
+            }
+
+        }
+
+        .blink{
+            animation: change 1.2s linear infinite;
+        }
+        @keyframes change  {
+            0% {
+                
+                opacity: 1;
+            }
+            25%{
+                opacity: 0.8;
+            }
+            50%{
+                opacity: 0.6;
+            }
+            75%{
+                opacity: 0.4;
+            }
+            100% {
+                opacity: 0.2;
+            }
+        }
+
+        
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>An immersive place to enjoy music</h1>
-    </header>
-    <nav>
-          <p>I wanted to make a website where people could experience music not just audibly, but also visually. As a listener, it is difficult for us to empathize with a song by just "listening". Once you're there, you're in an environment that matches the music you're listening to. You can "see" the "scenery" in this music. Especially in New York, a busy and fast-paced city, most people are driven by pressure and have no time to take a look at the surrounding scenery. Not to mention feeling the message of the song and the surrounding sounds. I want people to be immersed in the music.</p>
-          <h2>These are some of my inspirations</h2>
-        <ul>
-            <li><a href="https://en.artemuseum.com/">ARTE Museum</a></li>
-            <p>This summer I went to an immersive art exhibition in Chengdu, China. There are total of 1 1 exhibition hall, each with different music, and they are all matched to the corresponding scene. This exhibition brings the audience into the world of music through the three aspects of sight, hearing and even smell.After seeing this exhibition, I found out how different it would be if the music was aided by visual effects. When I was in that environment, my emotions and feelings were affected by different exhibition halls.</p>
-            <li><a href="https://www.youtube.com/watch?v=TEpJAgJU7nU">Sleep aid videos on Youtube</a></li>
-            <p>Online sleep aid videos, such as listening to the sound of rain and watching video footage of rain. People often use such videos to relieve stress and aid sleep.</p>
-            <li><a href="https://newsroom.spotify.com/2021-02-25/how-to-sort-your-favorite-songs-with-spotifys-new-genre-and-mood-filters/">Spotify music category</a></li>
-             <p>Spotify's music classification feature helps people discover and explore a wide range of music genres and genres, making it easier for users to discover new music and artists to suit their musical tastes and emotional needs. This feature enriches the music experience and makes it easier for people to find music content that matches their interests and moods.</p>
-        </ul>
-        </nav>
-        <section>
-        <h2>Immediate goal</h2>
-        <p>In this website, I want to make it possible for users to choose the music style they want to listen to through different moods every day. When the user selects a song you want to listen to, he can also watch a video with the same mood and meaning as the music. This makes it easy for people to relate to the music.</p>
-        </nav>
-        <h2>Do some easy research</h2>
-        <p>What kind of music do you like best？</p>
+    <div class="stars"></div>
+    <div class="lyrics-container">
+        <div class="lyrics">
+            <div class="textone" style="text-align: center;position: fixed;left: 500px;top: 0;  height: 100%;overflow-y:scroll;z-index: 10000;">
+                <p style="animation: change 1.6s linear infinite;">JUST TWO OF US</p>
+                <p>Artists: Bill Withers, Grover Washington, Jr.</p>
+                <p>Released: 1980</p>
+                <p>Genres: Jazz, Rhythm and blues, Soul music</p>
+                <p>♩I see the crystal raindrops fall</p>
+                <p>♩And the beauty of it all</p>
+                <p>♩Is when the sun comes shining through</p>
+                <p>♩To make those rainbows in my mind</p>
+                <p>♩When I think of you sometime</p>
+                <p>♩And I wanna spend some time with you</p>
+                <!-- 以下是您想要放大的部分 -->
+                <p style="font-size: 24px;">♩Just the two of us</p>
+                <p style="font-size: 24px;">♩We can make it if we try</p>
+                <p style="font-size: 24px;">♩Just the two of us</p>
+                <p style="font-size: 24px;">(♩Just the two of us)</p>
+                <p style="font-size: 24px;">♩Just the two of us</p>
+                <p style="font-size: 24px;">♩Building castles in the sky</p>
+                <p style="font-size: 24px;">♩Just the two of us</p>
+                <p style="font-size: 24px;">♩You and I</p>
+                <!-- 你的歌词内容 -->
+                <p>♩We look for love, no time for tears</p>
+                <p>♩Wasted water's all that is</p>
+                <p>♩And it don't make no flowers grow</p>
+                <p>♩Good things might come to those who wait</p>
+                <p>♩Not for those who wait too late</p>
+                <p>♩We gotta go for all we know</p>
+                <p>♩Just the two of us</p>
+                <p>♩We can make it if we try</p>
+                <p>♩Just the two of us</p>
+                <p>(♩Just the two of us)</p>
+                <p>♩Just the two of us</p>
+                <p>♩Building them castles in the sky</p>
+                <p>♩Just the two of us</p>
+                <p>♩You and I</p>
+            </div>
 
-<label for="music-choice">Choose a music category:</label>
-<input list="music-categories" id="music-choice" name="music-choice" />
 
-<datalist id="music-categories">
-  <option value="R&B"></option>
-  <option value="Pop"></option>
-  <option value="Hiphop"></option>
-  <option value="Rock"></option>
-  <option value="Mood"></option>
-  <option value="Folk"></option>
-  <option value="Absolute"></option>
-  <option value="Jazz"></option>
-  <option value="Electronic"></option>
-  <option value="Metal"></option>
-</datalist>
-<nav>
-<p>Please enter your email address</p>
-<label for="email">globex.com email:</label>
 
-<input type="email" id="email" pattern=".+@globex\.com" size="30" required />
-<nav>
-<p>Do you remember the day when you first started enjoying music?</p>
-<label for="start">Start month:</label>
+            <div class="scrolling">
+                <p class="blink" style="opacity: 0;">JUST TWO OF US</p>
+                <p style="position: relative; left: 100%;">I see the crystal raindrops fall</p>
+                <p style="position: relative; left:20%;">And the beauty of it all</p>
+                <p style="position: relative; left: 1450px;">Is when the sun comes shining through</p>
+                <p style="position: relative; left: 700px;">To make those rainbows in my mind</p>
+                <p style="position: relative; left: 100px;">Just the two of us</p>
+                <p style="position: relative; left: 2100px;">To make those rainbows in my mind</p>
+                <p style="position: relative; left: 1600px;">When I think of you sometime</p>
+                <p style="position: relative; left: 880px;">And I wanna spend some time with you</p>
+                <!-- 以下是您想要放大的部分 -->
+                <p style="font-size: 24px;position: relative; left: 2500px;">Just the two of us</p>
+                <p style="font-size: 24px;position: relative; left: 1750px;">We can make it if we try</p>
+                <p style="font-size: 24px;position: relative; left: 500px;">Just the two of us</p>
+                <p style="font-size: 24px;position: relative; left: 50%;">(Just the two of us)</p>
+                <p style="font-size: 24px;position: relative; left: 130px;">Just the two of us</p>
+                <p style="font-size: 40px;position: relative; left: 1400px;">Just the two of us</p>
+                <p style="font-size: 24px;position: relative; left: 800px;">Building castles in the sky</p>
+                <p style="font-size: 24px;position: relative; left: 2000px;">Just the two of us</p>
+                <p style="font-size: 24px;position: relative; left: 40%;">You and I</p>
+                <!-- 你的歌词内容 -->
+                <p style="position: relative; left: 10px;">We look for love, no time for tears</p>
+                <p style="position: relative; left: 350px;">Wasted water's all that is</p>
+                <p style="position: relative; left: 1300px;">And it don't make no flowers grow</p>
+                <p style="position: relative; left: 1100px;">Good things might come to those who wait</p>
+                <p style="position: relative; left: 2300px;">Not for those who wait too late</p>
+                <p style="position: relative; left: 60%;">We gotta go for all we know</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function createStars() {
+            const stars = document.querySelector(".stars");
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement("div");
+                star.className = "star";
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                star.style.animation = `twinkle ${Math.random() * 2 + 1}s infinite alternate`;
+                stars.appendChild(star);
+            }
+        }
 
-<input type="month" id="start" name="start" min="2018-03" value="2018-05" />
-
-    </section>
-    <footer>
-        <p>Run out of ideas：）</p>
-    </footer>
+        createStars();
+    </script>
 </body>
+
 </html>

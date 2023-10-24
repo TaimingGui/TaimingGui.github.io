@@ -1,138 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* 新增的样式用于标题 */
-    .title-container {
-      text-align: right; /* 文字右对齐 */
-      margin-top: 20px;
-      position: relative;
-    }
-
-    .title {
-      font-size: 48px; /* 更大的文字大小 */
-      color: #fff;
-      font-weight: bold;
-      text-transform: uppercase;
-      display: inline-block;
-      cursor: pointer;
-      margin-right: 20px; /* 调整文字与发光方块的间距 */
-      transition: transform 0.3s, color 0.3s;
-    }
-
-    .title:hover {
-      transform: scale(1.2);
-      color: purple;
-      animation: none; /* 移除标题的摇晃动画 */
-    }
-
-    /* 循环滚动的标题和文字颜色变化 */
-    .scrolling-title {
-      overflow: hidden;
-      white-space: nowrap;
-      animation: scrollText 10s linear infinite, colorChange 3s infinite;
-    }
-
-    @keyframes scrollText {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-
-    @keyframes colorChange {
-      0% {
-        color: red;
-      }
-      25% {
-        color: blue;
-      }
-      50% {
-        color: green;
-      }
-      75% {
-        color: orange;
-      }
-      100% {
-        color: red;
-      }
-    }
-  </style>
-  <title>Swipe your mouse</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <title>歌词册</title>
 </head>
 <body>
-  <div class="container">
-    <!-- 立方体代码 -->
-    <div class="cube">
-      <div style="--x:-1; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
-      <div style="--x:-0; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
-      <div style="--x:1; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
+    <div class="lyrics-container">
+        <img src="./img/5z2pbxsd8bc71.webp" alt="背景图像">
+        <div class="lyrics">
+            <p>I wanna go to the moon</p>
+            <p>Don't leave so soon (don't leave so soon)</p>
+            <p>How could I get through? (How could I get through?)</p>
+            <p>I wanna go to the moon</p>
+            <p>Don't leave so soon (don't leave so soon)</p>
+            <p>How could I get through? (How could I get through?)</p>
+            <p>Don't leave so soon (don't leave so soon)</p>
+            <p>How could I get through? (How could I get through?)</p>
+        </div>
+        <div class="tabbar">
+            <!-- <a href="tabbar.html"><button>tab bar</button></a> -->
+            <a href="./html/tabbar.html">Click it</a>
+        </div>
     </div>
-    <div class="cube">
-      <div style="--x:-1; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
-      <div style="--x:-0; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
-      <div style="--x:1; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
-    </div>
-    <div class="cube">
-      <div style="--x:-1; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
-      <div style="--x:-0; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
-      <div style="--x:1; --y:0;">
-        <span style="--i:3"></span>
-        <span style="--i:2"></span>
-        <span style="--i:1"></span>
-      </div>
-    </div>
-  </div>
-  <!-- 新增标题容器和标题 -->
-  <div class="title-container">
-    <h1 class="title">Swipe your mouse</h1>
-  </div>
-  <!-- 新增滚动标题 -->
-  <div class="scrolling-title">
-    <span>Find out what's in here</span>
-  </div>
- </div>
-<img src="https://i.pinimg.com/originals/a1/77/df/a177dfc84703c31afa0d501ccf43fe4f.gif" alt="Hidden GIF" class="hidden-gif">
-</div>
 </body>
 </html>
-
-

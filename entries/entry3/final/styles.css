@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #a1a6ad;
 }
 
 .container {
@@ -14,6 +14,7 @@ body {
     transform: translateY(20px);
     animation: fade-in 2s ease-out forwards, text-shrink 20s linear forwards;
     overflow-y: scroll;
+    color:whitesmoke;
 }
 
 .quote p {
@@ -27,7 +28,7 @@ body {
     position: relative;
     z-index: -1;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: gray;
     border: 2px solid #ddd;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
     transition: opacity 1s, transform 1s;
@@ -60,12 +61,12 @@ body {
 
 .floating-text {
     font-family: 'Playfair Display', serif;
-    font-size: 72px; /* 初始文本大小 */
+    font-size: 60px; /* 初始文本大小 */
     line-height: 2.0;
     letter-spacing: 1px;
     position: absolute;
     opacity: 0.7;
-    color: #ff5733; /* 文字颜色，可以根据需要修改 */
+    color: black; /* 文字颜色，可以根据需要修改 */
     top: 50%; /* 调整垂直位置 */
     transform: translateY(-50%);
     animation: float 5s linear infinite alternate;
@@ -107,7 +108,7 @@ body {
 
 .container:hover .quote p {
     /* ...其他样式... */
-    color: #ff5733; /* 修改文字颜色 */
+    color: #a5dff2; /* 修改文字颜色 */
 }
 
 
