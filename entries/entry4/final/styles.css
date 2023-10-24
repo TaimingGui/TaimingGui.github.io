@@ -26,7 +26,7 @@ body {
 .lyrics p {
     margin: 10px 0;
     font-size: 35px; /* 放大文字 */
-    font-weight: 1000; /* 设置更粗体，这里使用800表示更粗 */
+    font-weight: 900; /* 设置更粗体，这里使用800表示更粗 */
     color: rgb(255, 255, 255); /* 文字颜色白色 */
     transition: opacity 0.5s; /* 添加渐变效果 */
 }
