@@ -4,8 +4,8 @@
     <style>
         body {
             background-image: url('https://i.pinimg.com/originals/a8/17/f2/a817f27f252c3e43c78181468b85b1e5.gif');
-            background-size: cover; /* 使背景图像覆盖整个页面 */
-            background-repeat: no-repeat; /* 禁止重复背景图像 */
+            background-size: cover;
+            background-repeat: no-repeat;
             background-color: black;
             text-align: center;
             display: flex;
@@ -14,31 +14,54 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
+            font-family: 'Dancing Script', sans-serif; /* 更改页面的字体 */
+            font-weight: bold;
         }
         img {
             max-width: 60%;
             max-height: 60%;
+            transition: opacity 0.5s; /* 添加渐变效果 */
+        }
+        img:hover {
+            opacity: 0.3; /* 鼠标悬停时将图片透明度降低 */
         }
         h1 {
             color: white;
             font-size: 25px;
+            font-family: 'Dancing Script', sans-serif; /* 更改标题的字体 */
+            font-weight: bold;
         }
-        a {
-        color: lightpink; /* 这里的颜色代码代表紫色，你可以根据你的喜好更改颜色 */
-    }
-</style>
+        a.link {
+            color: lightpink;
+            text-decoration: none;
+            font-family: 'Dancing Script', sans-serif; /* 更改链接的字体 */
+            margin: 0 10px; /* 控制链接之间的间距 */
+            font-weight: bold;
+            transition: transform 0.2s; /* 添加变大效果的过渡 */
+        }
+        a.link:hover {
+            color: pink;
+            transform: scale(1.7); /* 鼠标悬停时将链接文本放大 10% */
+        }
+        ul {
+            list-style: none; /* 隐藏无序列表的标记 */
+        }
+        ul li {
+            display: inline-block; /* 让列表项水平排列 */
+        }
     </style>
 </head>
 <body>
     <img src="https://i.scdn.co/image/ab6761610000e5eb22c693c66a5494d88194d543" alt="Music Image">
     <h1>Feel the beauty of music</h1>
-    <ol>
-      <li><a href="entries/entry1/final/index.html">Entry 1</a></li>
-      <li><a href="entries/entry2/final/index.html">Entry 2</a></li>
-      <li><a href="entries/entry3/final/index.html">Entry 3</a></li>
-      <li><a href="entries/entry4/final/index.html">Entry 4</a></li>
-      <li><a href="entries/entry5/final/index.html">Entry 5</a></li>
-      <li><a href="entries/entry6/Final work/index.html">Entry 6</a></li>
-    </ol>
+    <ul>
+        <li><a class="link" href="entries/entry1/final/index.html">Just two of us</a></li>
+        <li><a class="link" href="entries/entry2/final/index.html">Just wanna rock</a></li>
+        <li><a class="link" href="entries/entry3/final/index.html">Donda</a></li>
+        <li><a class="link" href="entries/entry4/final/index.html">Moon</a></li>
+        <li><a class="link" href="entries/entry5/final/index.html">Album store</a></li>
+        <li><a class="link" href="entries/entry6/Final work/index.html">daily music</a></li>
+    </ul>
 </body>
 </html>
+
