@@ -364,7 +364,7 @@ body {
 .three .caption-text,
 .four .caption-text {
   font-family: 'Pacifico', cursive;
-  color: #FFFFFF; /* 设置文本颜色为白色 */
+  color: #whitesmoke; /* 设置文本颜色为白色 */
   font-size: 50px; /* 根据需要设置文本大小 */
   /* 其他样式属性 */
 }
