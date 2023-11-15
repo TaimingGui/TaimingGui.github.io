@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Sentence Generator</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 50px; /* Adjust the font size here */
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.5s ease;
+        }
+
+        .button-container {
+            position: fixed;
+            bottom: 75px;
+            right: 75px;
+        }
+
+        .list-one {
+            color: darkgreen;
+        }
+
+        .list-two {
+            color: saddlebrown;
+        }
+
+        .list-three {
+            color: skyblue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- This is the visible portion. -->
+    The <span class="list-one"></span> <span class="list-two"></span> will go to the <span class="list-three"></span>.
+
+    <!-- This is the button. -->
+    <div class="button-container">
+        <button id="generateButton">Generate!</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            // list one content
+            var one = [
+                "cute",
+                "smooth",
+                "evil",
+                "dusty",
+                "open",
+                "organic",
+                "futuristic",
+                "soft",
+                "round",
+                "sour",
+                "old",
+                "abnormal",
+                "striped",
+                "sticky",
+                "plastic",
+            ];
+
+            // list two content
+            var two = [
+                "alarm",
+                "blob",
+                "porpoise",
+                "bug",
+                "pill",
+                "oval",
+                "jacket",
+                "friend",
+                "inch",
+                "fountain",
+                "suspect",
+                "deer",
+                "pool",
+                "door",
+                "word",
+            ];
+
+            // list three content
+            var three = [
+                "circus",
+                "park",
+                "race track",
+                "zoo",
+                "pool",
+                "farm",
+                "roof",
+                "mall",
+                "market",
+                "lab",
+                "courthouse",
+                "university",
+                "classroom",
+                "street"
+            ];
+
+            // This is a very common randomizing function.
+            // It takes a list (array) and returns one at random.
+            function select_random(x){
+                return x[Math.floor(Math.random()*x.length)];
+            }
+
+            function generate(){
+                // Select a random item from each list
+                var selected_one = select_random(one);
+                var selected_two = select_random(two);
+                var selected_three = select_random(three);
+
+                // Take the selected (random) item from each list and make it visible
+                $('.list-one').html(selected_one);
+                $('.list-two').html(selected_two);
+                $('.list-three').html(selected_three);
+
+                // Change the background color
+                changeBackgroundColor();
+            }
+
+            function changeBackgroundColor(){
+                // Generate a random color in hexadecimal format
+                var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+                // Set the background color
+                $('body').css('background-color', randomColor);
+            }
+
+            $('#generateButton').click(function(){
+                generate();
+            });
+
+            generate();
+
+        });
+    </script>
+
+</body>
+</html>
+
