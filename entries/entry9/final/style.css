@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 480vh; /* 使用视口高度，使得页面滚动时内容不被遮盖 */
+  height: 520vh; /* 使用视口高度，使得页面滚动时内容不被遮盖 */
   margin: 5% 5% 0 5%; /* 适当调整 margin，例如：上右下左 */
   padding: 0; /* 去除 padding 或者适当调整 */
 }
