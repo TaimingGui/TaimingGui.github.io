@@ -1,148 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Sentence Generator</title>
-    
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-size: 50px; /* Adjust the font size here */
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color 0.5s ease;
-        }
-
-        .button-container {
-            position: fixed;
-            bottom: 75px;
-            right: 75px;
-        }
-
-        .list-one {
-            color: darkgreen;
-        }
-
-        .list-two {
-            color: saddlebrown;
-        }
-
-        .list-three {
-            color: skyblue;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>
+  <script defer src="script.js"></script>
 </head>
 <body>
-
-    <!-- This is the visible portion. -->
-    The <span class="list-one"></span> <span class="list-two"></span> will go to the <span class="list-three"></span>.
-
-    <!-- This is the button. -->
-    <div class="button-container">
-        <button id="generateButton">Generate!</button>
+  <h1 class="main-title">24</h1>
+  <div class="container">
+    <h1 class="text">Album: Donda<span>Artist: Kanye West</span></h1>
+    <h1 class="text">Released: 2021<span>Genre: Hip-Hop</span></h1>
+    <h1 class="text">Dear God, make it alright<span>Only You can make it alright</span></h1>
+    <h1 class="text">Dear Lord, make it alright<span>Nothing else ever feels right</span></h1>
+    <h1 class="text">Dear Lord, make it alright<span>Nothing else ever feels right</span></h1>
+    <h1 class="text">Nah, nah, nah<span>Nothing else ever feels right</span></h1>
+    <h1 class="text">Never the right time to go<span>God, I done my time to go</span></h1>
+    <h1 class="text">Never the right time to go<span>God loves you</span></h1>
+    <h1 class="text">Love when you choose your steps<span>Gotta make it right before you left</span></h1>
+    <h1 class="text">Gotta make it right before you<span>Everybody wanna feel like</span></h1>e
+    <h1 class="text">Everything gon' be right<span>New me over the old me</span></h1>
+    <div class="center-image-container">
+      <img src="https://i.redd.it/d1b3rdmdt6o71.jpg" alt="Center Image" id="first-image">
+      <img src="https://m.media-amazon.com/images/M/MV5BODExM2U0MjItOGZlNC00YmI3LTkyNGMtMjQ4YzE0YjkzNjViXkEyXkFqcGdeQXVyNDU1NDIzMzY@._V1_.jpg" alt="Second Image" id="second-image" class="hidden">
+      <p class="small-text">Kanye West - 24 (Music Video)</p>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script>
-        $(document).ready(function() {
-
-            // list one content
-            var one = [
-                "cute",
-                "smooth",
-                "evil",
-                "dusty",
-                "open",
-                "organic",
-                "futuristic",
-                "soft",
-                "round",
-                "sour",
-                "old",
-                "abnormal",
-                "striped",
-                "sticky",
-                "plastic",
-            ];
-
-            // list two content
-            var two = [
-                "alarm",
-                "blob",
-                "porpoise",
-                "bug",
-                "pill",
-                "oval",
-                "jacket",
-                "friend",
-                "inch",
-                "fountain",
-                "suspect",
-                "deer",
-                "pool",
-                "door",
-                "word",
-            ];
-
-            // list three content
-            var three = [
-                "circus",
-                "park",
-                "race track",
-                "zoo",
-                "pool",
-                "farm",
-                "roof",
-                "mall",
-                "market",
-                "lab",
-                "courthouse",
-                "university",
-                "classroom",
-                "street"
-            ];
-
-            // This is a very common randomizing function.
-            // It takes a list (array) and returns one at random.
-            function select_random(x){
-                return x[Math.floor(Math.random()*x.length)];
-            }
-
-            function generate(){
-                // Select a random item from each list
-                var selected_one = select_random(one);
-                var selected_two = select_random(two);
-                var selected_three = select_random(three);
-
-                // Take the selected (random) item from each list and make it visible
-                $('.list-one').html(selected_one);
-                $('.list-two').html(selected_two);
-                $('.list-three').html(selected_three);
-
-                // Change the background color
-                changeBackgroundColor();
-            }
-
-            function changeBackgroundColor(){
-                // Generate a random color in hexadecimal format
-                var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
-                // Set the background color
-                $('body').css('background-color', randomColor);
-            }
-
-            $('#generateButton').click(function(){
-                generate();
-            });
-
-            generate();
-
-        });
-    </script>
-
+    <h1 class="text">Let it out, let it all out<span>God, please set it alright</span></h1>
+    <h1 class="text">Save me, yeah, make it alright<span>Bow heads cause it's alright</span></h1>
+    <h1 class="text">24 hours, 24 candles, 24 hours<span>Yeah, yeah, yeah, yeah, yeah</span></h1>
+    <h1 class="text">Throw our hands up in the sky<span>Yes, Lord, we put 'em high</span></h1>
+    <h1 class="text">Yeah, know you alive <span>And God's not finished</span></h1>
+    <h1 class="text">Know you alive<span>And God's step's finished</span></h1>
+    <h1 class="text">But know you alive<span>And God's not finished</span></h1>
+    <h1 class="text">We know you alive<span>And God, ay</span></h1>
+    <h1 class="text">We gonna be okay<span>We gonna be okay</span></h1>
+    <h1 class="text">We gonna be okay<span>We gonna be okay</span></h1>
+    <h1 class="text">We gonna be okay<span>We gonna be ok..</span></h1>
+    <h1 class="text">We gonna be ok...<span>We gonna be....</span></h1>
+    <h1 class="text">We gonna be.....<span>We gonna......</span></h1>
+    </div>
 </body>
 </html>
-

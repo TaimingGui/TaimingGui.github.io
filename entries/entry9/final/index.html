@@ -1,45 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
-  <script src="https://unpkg.com/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>
-  <script defer src="script.js"></script>
-  <h1 class="main-title">24</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Sentence Generator</title>
+    
+    <style>
+        @font-face {
+            font-family: 'TheFont';
+            src: url("https://garet.typeforward.com/assets/fonts/shared/TFMixVF.woff2") format('woff2');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 40px;
+            font-family: 'Indie Flower', cursive;
+            font-weight: bold;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.5s ease;
+        }
+
+        .button-container {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+        }
+
+        h1 {
+            font-family: 'TheFont';
+            font-size: 4em;
+            color: white;
+            text-align: center;
+            margin-bottom: -10px; /* 调整为负值以减少与歌词之间的间距 */
+        }
+
+        .lyrics {
+            color: white;
+            text-align: center;
+        }
+
+        .breathe-animation span {
+            font-family: 'TheFont';
+            font-size: clamp(10vw, 20vw, 50vh);
+            color: white;
+            text-align: center;
+            animation: letter-breathe 3s ease-in-out infinite;
+        }
+
+        @keyframes letter-breathe {
+            from,
+            to {
+                font-variation-settings: 'wght' 100;
+            }
+
+            50% {
+                font-variation-settings: 'wght' 900;
+            }
+        }
+    </style>
 </head>
-<body>
-  <div class="container">
-    <h1 class="text">Album: Donda<span>Artist: Kanye West</span></h1>
-    <h1 class="text">Released: 2021<span>Genre: Hip-Hop</span></h1>
-    <h1 class="text">Dear God, make it alright<span>Only You can make it alright</span></h1>
-    <h1 class="text">Dear Lord, make it alright<span>Nothing else ever feels right</span></h1>
-    <h1 class="text">Dear Lord, make it alright<span>Nothing else ever feels right</span></h1>
-    <h1 class="text">Nah, nah, nah<span>Nothing else ever feels right</span></h1>
-    <h1 class="text">Never the right time to go<span>God, I done my time to go</span></h1>
-    <h1 class="text">Never the right time to go<span>God loves you</span></h1>
-    <h1 class="text">Love when you choose your steps<span>Gotta make it right before you left</span></h1>
-    <h1 class="text">Gotta make it right before you<span>Everybody wanna feel like</span></h1>e
-    <h1 class="text">Everything gon' be right<span>New me over the old me</span></h1>
-    <div class="center-image-container">
-      <img src="https://i.redd.it/d1b3rdmdt6o71.jpg" alt="Center Image" id="first-image">
-      <img src="https://m.media-amazon.com/images/M/MV5BODExM2U0MjItOGZlNC00YmI3LTkyNGMtMjQ4YzE0YjkzNjViXkEyXkFqcGdeQXVyNDU1NDIzMzY@._V1_.jpg" alt="Second Image" id="second-image" class="hidden">
-      <p class="small-text">Kanye West - 24 (Music Video)</p>
+<body class="breathe-animation">
+    <h1>Red</h1>
+    <div class="lyrics"></div>
+    <div class="button-container">
+        <button id="generateButton">paint to red!</button>
     </div>
-    <h1 class="text">Let it out, let it all out<span>God, please set it alright</span></h1>
-    <h1 class="text">Save me, yeah, make it alright<span>Bow heads cause it's alright</span></h1>
-    <h1 class="text">24 hours, 24 candles, 24 hours<span>Yeah, yeah, yeah, yeah, yeah</span></h1>
-    <h1 class="text">Throw our hands up in the sky<span>Yes, Lord, we put 'em high</span></h1>
-    <h1 class="text">Yeah, know you alive <span>And God's not finished</span></h1>
-    <h1 class="text">Know you alive<span>And God's step's finished</span></h1>
-    <h1 class="text">But know you alive<span>And God's not finished</span></h1>
-    <h1 class="text">We know you alive<span>And God, ay</span></h1>
-    <h1 class="text">We gonna be okay<span>We gonna be okay</span></h1>
-    <h1 class="text">We gonna be okay<span>We gonna be okay</span></h1>
-    <h1 class="text">We gonna be okay<span>We gonna be ok..</span></h1>
-    <h1 class="text">We gonna be ok...<span>We gonna be....</span></h1>
-    <h1 class="text">We gonna be.....<span>We gonna......</span></h1>
-    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            var lyrics = [
+                "Yeah, bitch, I said what I said",
+                "I'd rather be famous instead (walk on by)",
+                "I let all that get to my head",
+                "I don't care, I paint the town red (walk on by)",
+                "Bitch, I said what I said",
+                "I'd rather be famous instead (walk on by)",
+                "I let all that get to my head",
+                "I don't care, I paint the town red (walk on by)",
+                "Mm, she the devil",
+                "She a bad lil' bitch, she a rebel (walk on by)",
+                "She put her foot to the pedal",
+                "It'll take a whole lot for me to settle (walk on by)",
+                "Mm, she the devil",
+                "She a bad lil' bitch, she a rebel (walk on by)",
+                "She put her foot to the pedal",
+                "It'll take a whole lot for me (yeah) to settle (walk on by)",
+                "Yeah, said my happiness is all of your misery",
+                "I put good dick all in my kidneys (walk on by)",
+                "This Margiel' don't come with no jealousy",
+                "My illness don't come with no remedy (walk on by)",
+                "I am so much fun without Hennessy",
+                "They just want my love and my energy (walk on by)",
+                "You can't talk no shit without penalties",
+                "Bitch, I'm in yo' shit if you send for me (walk on by)"
+            ];
+
+            var currentIndex = 0;
+
+            function generate(){
+                $('.lyrics').html(lyrics[currentIndex]);
+                currentIndex = (currentIndex + 1) % lyrics.length;
+                changeBackgroundColor();
+            }
+
+            function changeBackgroundColor(){
+                var randomRed = Math.floor(Math.random() * 256);
+                var randomColor = 'rgb(' + randomRed + ', 0, 0)';
+                $('body').css('background-color', randomColor);
+            }
+
+            $('#generateButton').click(function(){
+                generate();
+            });
+
+            generate();
+
+        });
+    </script>
 </body>
 </html>
