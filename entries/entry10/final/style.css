@@ -1,0 +1,121 @@
+:root {
+  --main-line-color: hsl(234, 62%, 86%);
+  --side-line-color: hsl(350, 100%, 91%);
+  --paper-color: hsl(0, 15%, 95%);
+  --ink-color: hsl(0, 0%, 12%);
+  --line-thickness: 3px;
+  --top-space: 4lh;
+  --paragraph-margin: 1.5rem;
+}
+
+.title {
+  font-family: 'Patrick Hand', cursive !important;
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 100px;
+  margin-bottom: 30px;
+  letter-spacing: 40px;
+}
+
+p {
+  font-family: 'Patrick Hand', cursive;
+}
+
+.click {
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  font-family: 'Patrick Hand', cursive !important;
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+
+.click:hover {
+  opacity: 0.6;
+}
+
+.paper {
+  background: var(--paper-color);
+  margin: 2rem;
+  padding: calc(var(--top-space) - 0.5 * var(--line-thickness)) 3rem 1rem 5.5rem;
+  font-family: system-ui;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--ink-color);
+  background-image:
+    linear-gradient(90deg,
+      transparent,
+      transparent 4rem,
+      var(--side-line-color) 4rem,
+      var(--side-line-color) 4.25rem,
+      transparent 4.25rem),
+    linear-gradient(var(--paper-color),
+      var(--paper-color) var(--top-space),
+      transparent var(--top-space)),
+    repeating-linear-gradient(transparent,
+      transparent calc(1lh - var(--line-thickness)),
+      var(--main-line-color) calc(1lh - var(--line-thickness)),
+      var(--main-line-color) 1lh,
+      transparent 1lh);
+  box-shadow: 0 0 1rem rgb(0 0 0 / 0.25);
+  position: relative;
+}
+
+.showtext {
+  width: auto;
+  font-family: 'Patrick Hand', cursive;
+  white-space: nowrap;
+  height: 12px;
+  width: 0;
+  animation: typing 1s steps(100, end) forwards;
+  animation-delay: 1s;
+  margin-top: 2px;
+  letter-spacing: 4px;
+  transition: opacity 0.5s ease;
+}
+
+.showtext:hover {
+  opacity: 0;
+  cursor: url('https://www.cursor.cc/cursor3d/3517.png'), auto;
+}
+
+img {
+  width: 350px;
+  height: 350px;
+  opacity: 0;
+}
+
+.imgtwo {
+  text-align: center;
+  position: fixed;
+  top: 300px;
+  right: 100px;
+  color: #000000;
+  font-family: 'Patrick Hand', cursive !important;
+  font-size: 30px;
+}
+
+.imgtwo:hover img {
+  opacity: 1;
+}
+
+.canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.trail {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff69b4; /* 粉色 */
+  border-radius: 50%;
+  pointer-events: none; /* 防止干扰鼠标点击其他元素 */
+  transition: opacity 1s ease; /* 添加淡出效果，可以根据需要调整 */
+  opacity: 0.7; /* 初始透明度 */
+}
