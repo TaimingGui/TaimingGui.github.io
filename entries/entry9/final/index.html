@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Sentence Generator</title>
-    
+
     <style>
         @font-face {
             font-family: 'TheFont';
@@ -14,14 +15,14 @@
         body {
             margin: 0;
             padding: 0;
-            font-size: 40px;
+            font-size: 50px;
             font-family: 'Indie Flower', cursive;
             font-weight: bold;
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: background-color 0.5s ease;
+            transition: background-color 1s ease-in-out;
         }
 
         .button-container {
@@ -35,12 +36,15 @@
             font-size: 4em;
             color: white;
             text-align: center;
-            margin-bottom: -10px; /* 调整为负值以减少与歌词之间的间距 */
+            margin-bottom: 50px;
         }
 
         .lyrics {
             color: white;
             text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
         }
 
         .breathe-animation span {
@@ -61,18 +65,53 @@
                 font-variation-settings: 'wght' 900;
             }
         }
+
+        #generateButton {
+            background-color: #FFD700; /* 设置按钮颜色为黄色 */
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #generateButton:hover {
+            transform: scale(1.1);
+        }
+
+        /* 火焰特效 */
+        #generateButton::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(255, 165, 0, 0.5), transparent);
+            transform: translateY(-100%);
+            animation: flame 1s infinite alternate;
+        }
+
+        @keyframes flame {
+            to {
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
+
 <body class="breathe-animation">
     <h1>Red</h1>
     <div class="lyrics"></div>
     <div class="button-container">
-        <button id="generateButton">paint to red!</button>
+        <button id="generateButton">Paint it yellow!</button>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
 
             var lyrics = [
                 "Yeah, bitch, I said what I said",
@@ -103,19 +142,23 @@
 
             var currentIndex = 0;
 
-            function generate(){
-                $('.lyrics').html(lyrics[currentIndex]);
-                currentIndex = (currentIndex + 1) % lyrics.length;
-                changeBackgroundColor();
+            function generate() {
+                $('.lyrics').css('opacity', 0);
+                setTimeout(function () {
+                    $('.lyrics').html(lyrics[currentIndex]);
+                    currentIndex = (currentIndex + 1) % lyrics.length;
+                    changeBackgroundColor();
+                    $('.lyrics').css('opacity', 1);
+                }, 500);
             }
 
-            function changeBackgroundColor(){
+            function changeBackgroundColor() {
                 var randomRed = Math.floor(Math.random() * 256);
                 var randomColor = 'rgb(' + randomRed + ', 0, 0)';
                 $('body').css('background-color', randomColor);
             }
 
-            $('#generateButton').click(function(){
+            $('#generateButton').click(function () {
                 generate();
             });
 
@@ -124,4 +167,9 @@
         });
     </script>
 </body>
+
 </html>
+
+
+
+
