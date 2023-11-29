@@ -1,0 +1,19 @@
+body {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: black;
+    color: #00ff00; /* Green text color */
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+
+#datetime {
+    font-size: 36px;
+}
+
+
