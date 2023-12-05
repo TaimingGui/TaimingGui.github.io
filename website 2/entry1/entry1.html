@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>星空</title>
+    <style>
+        body {
+            width: 1024px;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            /* 使用黑色背景 */
+        }
+
+        .stars {
+            position: fixed;
+            /* 使用fixed，使星空背景固定 */
+            width: 100%;
+            height: 100%;
+            background: url('your-background-image.jpg') center center fixed no-repeat;
+            /* 设置星空背景图像 */
+            background-size: cover;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            opacity: 0.8;
+            border-radius: 50%;
+        }
+        .lyrics-container{
+            width: 100%;
+            /* overflow: hidden; */
+        }
+
+        .lyrics p {
+            margin: 20px 0;
+            /* 段落之间的垂直间距 */
+            color: #fff;
+            /* 文本颜色为白色 */
+            text-shadow: 1px 1px 2px #000;
+            /* 文本阴影效果，增强可读性 */
+        }
+
+        .lyrics p:first-child {
+            font-size: 60px;
+            /* 第一行较大字体，标题样式 */
+            font-weight: bold;
+        }
+
+        .lyrics p:not(:first-child) {
+            font-size: 16px;
+            /* 其他行较小字体 */
+        }
+
+
+        .scrolling {
+            width: 100%;
+           position: absolute;
+        }
+    
+
+        .scrolling p {
+            /* padding-left: 100%; */
+            animation: fade 10s linear infinite;
+
+        }
+
+        @keyframes fade {
+            0% {
+                transform: translatex(0);
+            }
+
+            100% {
+                transform: translatex(-100%);
+            }
+
+        }
+
+        .blink{
+            animation: change 1.2s linear infinite;
+        }
+        @keyframes change  {
+            0% {
+                
+                opacity: 1;
+            }
+            25%{
+                opacity: 0.8;
+            }
+            50%{
+                opacity: 0.6;
+            }
+            75%{
+                opacity: 0.4;
+            }
+            100% {
+                opacity: 0.2;
+            }
+        }
+
+        .back{
+            text-decoration: none;
+            width: 100PX;
+            border: 1px solid #fff;
+            color: #fff;
+            font-size: 22px;
+            position: absolute;
+            top: 50px;
+            left: 150px;
+            border-radius: 20PX;
+            text-align: center;
+            box-shadow: 1px 1px 1px 1px rgb(255, 255, 255);
+        }
+        .next{
+            text-decoration: none;
+            width: 100PX;
+            border: 1px solid #fff;
+            color: #fff;
+            font-size: 22px;
+            position: absolute;
+            top: 50px;
+            right: 150px;
+            border-radius: 20PX;
+            text-align: center;
+            box-shadow: 1px 1px 1px 1px rgb(255, 255, 255);
+        }
+        .back:hover{
+            color: #b1b1b1;
+        }
+        .next:hover{
+            color: #b1b1b1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="lyrics-container">
+        <div class="lyrics">
+            <div class="textone" style="text-align: center;position: fixed;left: 500px;top: 0;  height: 100%;overflow-y:scroll;z-index: 10000;">
+                <p style="animation: change 1.6s linear infinite;">JUST TWO OF US</p>
+                <p>Artists: Bill Withers, Grover Washington, Jr.</p>
+                <p>Released: 1980</p>
+                <p>Genres: Jazz, Rhythm and blues, Soul music</p>
+                <p>♩I see the crystal raindrops fall</p>
+                <p>♩And the beauty of it all</p>
+                <p>♩Is when the sun comes shining through</p>
+                <p>♩To make those rainbows in my mind</p>
+                <p>♩When I think of you sometime</p>
+                <p>♩And I wanna spend some time with you</p>
+                <!-- 以下是您想要放大的部分 -->
+                <p style="font-size: 24px;">♩Just the two of us</p>
+                <p style="font-size: 24px;">♩We can make it if we try</p>
+                <p style="font-size: 24px;">♩Just the two of us</p>
+                <p style="font-size: 24px;">(♩Just the two of us)</p>
+                <p style="font-size: 24px;">♩Just the two of us</p>
+                <p style="font-size: 24px;">♩Building castles in the sky</p>
+                <p style="font-size: 24px;">♩Just the two of us</p>
+                <p style="font-size: 24px;">♩You and I</p>
+                <!-- 你的歌词内容 -->
+                <p>♩We look for love, no time for tears</p>
+                <p>♩Wasted water's all that is</p>
+                <p>♩And it don't make no flowers grow</p>
+                <p>♩Good things might come to those who wait</p>
+                <p>♩Not for those who wait too late</p>
+                <p>♩We gotta go for all we know</p>
+                <p>♩Just the two of us</p>
+                <p>♩We can make it if we try</p>
+                <p>♩Just the two of us</p>
+                <p>(♩Just the two of us)</p>
+                <p>♩Just the two of us</p>
+                <p>♩Building them castles in the sky</p>
+                <p>♩Just the two of us</p>
+                <p>♩You and I</p>
+            </div>
+
+
+
+            <div class="scrolling">
+                <p class="blink" style="opacity: 0;">JUST TWO OF US</p>
+                <p style="position: relative; left: 100%;">I see the crystal raindrops fall</p>
+                <p style="position: relative; left:20%;">And the beauty of it all</p>
+                <p style="position: relative; left: 1450px;">Is when the sun comes shining through</p>
+                <p style="position: relative; left: 700px;">To make those rainbows in my mind</p>
+                <p style="position: relative; left: 100px;">Just the two of us</p>
+                <p style="position: relative; left: 2100px;">To make those rainbows in my mind</p>
+                <p style="position: relative; left: 1600px;">When I think of you sometime</p>
+                <p style="position: relative; left: 880px;">And I wanna spend some time with you</p>
+                <!-- 以下是您想要放大的部分 -->
+                <p style="font-size: 24px;position: relative; left: 2500px;">Just the two of us</p>
+                <p style="font-size: 24px;position: relative; left: 1750px;">We can make it if we try</p>
+                <p style="font-size: 24px;position: relative; left: 500px;">Just the two of us</p>
+                <p style="font-size: 24px;position: relative; left: 50%;">(Just the two of us)</p>
+                <p style="font-size: 24px;position: relative; left: 130px;">Just the two of us</p>
+                <p style="font-size: 40px;position: relative; left: 1400px;">Just the two of us</p>
+                <p style="font-size: 24px;position: relative; left: 800px;">Building castles in the sky</p>
+                <p style="font-size: 24px;position: relative; left: 2000px;">Just the two of us</p>
+                <p style="font-size: 24px;position: relative; left: 40%;">You and I</p>
+                <!-- 你的歌词内容 -->
+                <p style="position: relative; left: 10px;">We look for love, no time for tears</p>
+                <p style="position: relative; left: 350px;">Wasted water's all that is</p>
+                <p style="position: relative; left: 1300px;">And it don't make no flowers grow</p>
+                <p style="position: relative; left: 1100px;">Good things might come to those who wait</p>
+                <p style="position: relative; left: 2300px;">Not for those who wait too late</p>
+                <p style="position: relative; left: 60%;">We gotta go for all we know</p>
+            </div>
+        </div>
+    </div>
+    <a href="../index.html" class="back">Back</a>
+    <a href="../entry2/index.html" class="next">Next</a>
+    <script>
+        function createStars() {
+            const stars = document.querySelector(".stars");
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement("div");
+                star.className = "star";
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                star.style.animation = `twinkle ${Math.random() * 2 + 1}s infinite alternate`;
+                stars.appendChild(star);
+            }
+        }
+
+        createStars();
+    </script>
+</body>
+
+</html>

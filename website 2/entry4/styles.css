@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.lyrics-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.lyrics-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lyrics {
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+}
+
+.lyrics p {
+    margin: 10px 0;
+    font-size: 35px; /* 放大文字 */
+    font-weight: 900; /* 设置更粗体，这里使用800表示更粗 */
+    color: rgb(255, 255, 255); /* 文字颜色白色 */
+    transition: opacity 0.5s; /* 添加渐变效果 */
+}
+
+.lyrics p:hover {
+    opacity: 0.3; /* 鼠标悬停时透明化 */
+    }
+
+    .lyrics p {
+        animation: sideSlide 5s ;
+    }
+    
+    @keyframes sideSlide {
+        0%{
+            opacity: 0;
+        }
+        15%{
+            opacity: 0.2;
+        }
+        25%{
+            opacity: 0.4;
+        }
+        50%{
+            opacity: 0.6;
+        }
+        75%{
+            opacity: 0.8;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+.tabbar{
+    position: absolute;
+    top: 31%;
+    left: 57%;
+}
+.tabbar:hover button{
+    opacity: 0.3;
+    transition: 2s;
+}
+a{
+    text-decoration: none;
+    font-size: 33px;
+    color: #d9b7f8;
+}
+a:hover{
+    opacity: 0.5;
+}
+
+.back{
+    text-decoration: none;
+    width: 100PX;
+    border: 1px solid #000000;
+    color: #000000;
+    font-size: 22px;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    border-radius: 20PX;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+}
+.next{
+    text-decoration: none;
+    width: 100PX;
+    border: 1px solid #000000;
+    color: #000000;
+    font-size: 22px;
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    border-radius: 20PX;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+}
+.back:hover{
+    color: #b1b1b1;
+}
+.next:hover{
+    color: #b1b1b1;
+}
