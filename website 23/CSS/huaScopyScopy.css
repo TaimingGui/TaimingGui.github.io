@@ -1,0 +1,56 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #DCDCDC;
+}
+span {
+    display: none; 
+  }
+
+canvas {
+cursor: crosshair;
+}
+
+span {
+  font-family: 'Georgia', cursive;
+font-size: 40px;
+position: fixed; 
+top: 50%;
+left: 50%;
+color: #000;
+margin-top: -40px;
+margin-left: -200px;
+}
+body{
+  background-color: #DCDCDC;
+  overflow: hidden;
+}
+.pp{
+  writing-mode: vertical-lr;
+  font-size: 65px;
+  position: fixed;
+  margin: 80px 0 0 300px;
+  color: #ececec;
+  letter-spacing: 80px;
+}
+.po{
+  font-size: 75px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: #929292;
+}
+@media screen and (max-width: 700px){
+  .pp{
+    font-size: 45px;
+    position: fixed;
+left: -300px;
+  top: 80px;
+  /* transform: translate(0,-50%); */
+  color: #929292;
+  }
+}

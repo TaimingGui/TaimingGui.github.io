@@ -1,0 +1,142 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #DCDCDC;
+}
+.p0{
+    color: #666666;
+    font-size: 75px;
+    text-align: center;
+    line-height:130px;
+    font-family: '楷体';
+}
+.pp{
+    writing-mode: vertical-lr;
+    font-size: 65px;
+    position: fixed;
+    margin: 80px 0 0 150px;
+    color: #524c4c;
+    letter-spacing: 80px;
+}
+.huanos{
+    width: 800px;
+    height: 800px;
+    border: 8px solid #bfbfbf;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.huants{
+    width: 600px;
+    height: 600px;
+    border: 8px solid #a1a1a1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.huanthr{
+    width: 400px;
+    height: 400px;
+    border: 8px solid #898989;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.huanfou{
+    width: 200px;
+    height: 200px;
+    border: 8px solid #6e6e6e;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.huanfiv{
+    width: 130px;
+    height: 130px;
+    background-color: #d0d0d0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 700px){
+    .pp{
+        writing-mode: vertical-lr;
+        font-size: 45px;
+        position: fixed;
+        margin: 110px 0 0 0px;
+        color: #524c4c;
+        letter-spacing: 100px;
+    }
+    .huanos{
+        width: 600px;
+        height: 600px;
+        border: 8px solid #bfbfbf;
+        border-radius: 50%;
+        position: fixed;
+        top: 50%;
+        left: 40px;
+        transform: translate(0,-50%);
+    }
+    .huants{
+        width: 450px;
+        height: 450px;
+        border: 8px solid #a1a1a1;
+        position: fixed;
+        top: 50%;
+        left: 115px;
+        transform: translate(0,-50%);
+        border-radius: 50%;
+    }
+    .huanthr{
+        width: 300px;
+        height: 300px;
+        border: 8px solid #898989;
+        position: fixed;
+        top: 50%;
+        left: 190px;
+        transform: translate(0,-50%);
+        border-radius: 50%;
+    }
+    .huanfou{
+        width: 150px;
+        height: 150px;
+        border: 8px solid #6e6e6e;
+        position: fixed;
+        top: 50%;
+        left: 265px;
+        transform: translate(0,-50%);
+        border-radius: 50%;
+    }
+    .huanfiv{
+        width: 100px;
+        height: 100px;
+        background-color: #d0d0d0;
+        position: fixed;
+        top: 50%;
+        left: 300px;
+        transform: translate(0,-50%);
+        border-radius: 50%;
+    }
+    .p0{
+        color: #666666;
+        font-size: 55px;
+        text-align: center;
+        line-height:100px;
+        font-family: '楷体';
+    }
+}
