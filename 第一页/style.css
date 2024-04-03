@@ -1,0 +1,212 @@
+.desktop,
+.desktop * {
+  box-sizing: border-box;
+}
+.desktop {
+  background: #383838;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.yeezus-album-cover-2 {
+  width: 850px;
+  height: 700px;
+  position: absolute;
+  left: 298px;
+  top: 136px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.album-store {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 128px;
+  font-weight: 500;
+  position: absolute;
+  left: 348px;
+  top: 375px;
+  width: 750px;
+  height: 137px;
+  -webkit-text-stroke: 2px #000000;
+}
+.yeezus-by-kanye-west {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 638px;
+  top: 24px;
+  width: 219px;
+  height: 94px;
+}
+.kanye-west {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 638px;
+  top: 906px;
+  width: 170px;
+  height: 51px;
+}
+.new-slaves {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  position: absolute;
+  left: 558px;
+  top: 838px;
+  width: 331px;
+  height: 51px;
+}
+.line-1 {
+  border-style: solid;
+  border-color: #9f9f9f;
+  border-width: 5px 0 0 0;
+  width: 855.01px;
+  height: 0px;
+  position: absolute;
+  left: 292px;
+  top: 972px;
+}
+.line-2 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 5px 0 0 0;
+  width: 254px;
+  height: 0px;
+  position: absolute;
+  left: 292px;
+  top: 972px;
+}
+.ellipse-1 {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 546px;
+  top: 957px;
+}
+.i-phone-11-pro-x-1{
+  display: none;
+}
+
+
+@media screen and (max-width: 500px) {
+  .desktop{
+    display: none;
+  }
+  .i-phone-11-pro-x-1{
+    display: block;
+  }
+  .i-phone-11-pro-x-1,
+.i-phone-11-pro-x-1 * {
+  box-sizing: border-box;
+}
+.i-phone-11-pro-x-1 {
+  background: #383838;
+  height: 812px;
+  position: relative;
+  overflow: hidden;
+}
+.yeezus-by-kanye-west {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 76px;
+  top: 131px;
+  width: 223px;
+  height: 114px;
+}
+.yeezus-album-cover-3 {
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  left: 37px;
+  top: 245px;
+  object-fit: cover;
+}
+.album-store {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  position: absolute;
+  left: 43px;
+  top: 27px;
+  width: 300px;
+  height: 68px;
+  -webkit-text-stroke: 2px #000000;
+}
+.kanye-west {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: 105px;
+  top: 657px;
+  width: 165px;
+  height: 54px;
+}
+.new-slaves {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 28px;
+  top: 603px;
+  width: 331px;
+  height: 54px;
+}
+.line-1 {
+  border-style: solid;
+  border-color: #9f9f9f;
+  border-width: 5px 0 0 0;
+  width: 312px;
+  height: 0px;
+  position: absolute;
+  left: 28px;
+  top: 738px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.line-2 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 5px 0 0 0;
+  width: 110px;
+  height: 0px;
+  position: absolute;
+  left: 28px;
+  top: 738px;
+}
+.ellipse-1 {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 24px;
+  height: 25px;
+  position: absolute;
+  left: 138px;
+  top: 748px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, -1);
+}
+
+}

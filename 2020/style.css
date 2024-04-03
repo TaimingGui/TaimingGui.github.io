@@ -1,0 +1,434 @@
+.desktop,
+.desktop * {
+  box-sizing: border-box;
+}
+.desktop {
+  background: #383838;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.savage-mode-ii-by-21-savage-metro-boomin {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 128px;
+  top: 442px;
+  width: 328px;
+  height: 51px;
+}
+.mr-morale-the-big-steppers-by-kendrick-lamar {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 131px;
+  top: 856px;
+  width: 325px;
+  height: 53px;
+}
+.whole-lotta-red-by-playboi-carti {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 451px;
+  top: 857px;
+  width: 325px;
+  height: 53px;
+}
+.certified-lover-boy-by-drake {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 774px;
+  top: 860px;
+  width: 325px;
+  height: 51px;
+}
+.utopia-by-travis-scott {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 1090px;
+  top: 860px;
+  width: 325px;
+  height: 52px;
+}
+.donda-by-kanye-west {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 831px;
+  top: 436px;
+  width: 204px;
+  height: 51px;
+}
+.heroes-villains-by-metro-boomin {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 1143px;
+  top: 439px;
+  width: 219px;
+  height: 51px;
+}
+.for-all-the-dogs-by-drake {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 493px;
+  top: 438px;
+  width: 227px;
+  height: 51px;
+}
+._1980 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 27px;
+  top: 201px;
+  width: 97px;
+  height: 85px;
+  -webkit-text-stroke: 1px #000000;
+}
+.period {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 21px;
+  top: 62px;
+  width: 110px;
+  height: 48px;
+  -webkit-text-stroke: 1px #000000;
+}
+._1990 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 27px;
+  top: 348px;
+  width: 97px;
+  height: 32px;
+  -webkit-text-stroke: 1px #000000;
+}
+._2000 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 27px;
+  top: 499px;
+  width: 97px;
+  height: 31px;
+  -webkit-text-stroke: 1px #000000;
+}
+._2010 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 28px;
+  top: 647px;
+  width: 97px;
+  height: 112px;
+  -webkit-text-stroke: 1px #000000;
+}
+._2020 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 28px;
+  top: 802px;
+  width: 97px;
+  height: 84px;
+  -webkit-text-stroke: 1px #000000;
+}
+.home {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 293px;
+  top: 41px;
+  width: 99px;
+  height: 40px;
+}
+.rectangle-1 {
+  background: rgba(14, 14, 14, 0);
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px;
+  width: 99px;
+  height: 42px;
+  position: absolute;
+  left: 293px;
+  top: 41px;
+}
+.refresh {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 1103px;
+  top: 41px;
+  width: 132px;
+  height: 40px;
+}
+.rectangle-2 {
+  background: rgba(14, 14, 14, 0);
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px;
+  width: 126px;
+  height: 42px;
+  position: absolute;
+  left: 1106px;
+  top: 40px;
+}
+.rectangle-3 {
+  background: rgba(14, 14, 14, 0);
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px;
+  width: 126px;
+  height: 42px;
+  position: absolute;
+  left: 1106px;
+  top: 40px;
+}
+.rectangle-4 {
+  background: rgba(14, 14, 14, 0);
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px;
+  width: 99px;
+  height: 42px;
+  position: absolute;
+  left: 293px;
+  top: 41px;
+}
+.travis-scott-utopia-2 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 1103px;
+  top: 528px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.mbdtf-alt-2 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 463px;
+  top: 528px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+._808-s-heartbreak-2 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 783px;
+  top: 107px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.igor-tyler-the-creator-2 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 143px;
+  top: 528px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.drake-certified-lover-boy-2 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 786px;
+  top: 528px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.ready-to-die-2 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 143px;
+  top: 107px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.kanyewest-collegedropout-2 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 1103px;
+  top: 107px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.raising-hell-run-dmc-album-cover-art-2 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 463px;
+  top: 107px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+
+
+
+
+._color{
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 28px;
+  top: 950px;
+  width: 97px;
+  height: 112px;
+  -webkit-text-stroke: 1px #000000;
+}
+._White{
+  color: #ffffff;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 220px;
+  top: 955px;
+  width: 227px;
+  height: 51px;
+}
+._Black{
+  color: #ffffff;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 450px;
+  top: 955px;
+  width: 227px;
+  height: 51px;
+}
+._Red{
+  color: #ffffff;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 670px;
+  top: 955px;
+  width: 227px;
+  height: 51px;
+}
+._Pink{
+  color: #ffffff;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 880px;
+  top: 955px;
+  width: 227px;
+  height: 51px;
+}
+._Yellow{
+  color: #ffffff;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 1090px;
+  top: 955px;
+  width: 227px;
+  height: 51px;
+}
+._Blue{
+  color: #ffffff;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 1290px;
+  top: 955px;
+  width: 227px;
+  height: 51px;
+}
+
+
+.change:hover{
+  color: red;
+  font-size: 35px;
+}
+._White:hover{
+  color: white;
+}
+._Black:hover{
+  color: black;
+}
+._Red:hover{
+  color: red;
+}
+._Pink:hover{
+  color: pink;
+}
+._Yellow:hover{
+  color: yellow;
+}
+._Blue:hover{
+  color: rgb(75, 129, 217);
+}
+img:hover{
+  transform: scale(1.1);
+}
