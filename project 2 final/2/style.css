@@ -1,0 +1,732 @@
+.desktop,
+.desktop * {
+  box-sizing: border-box;
+}
+.desktop {
+  background: #383838;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.raising-hell-run-dmc-album-cover-art-1 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 463px;
+  top: 107px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.ready-to-die-1 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 143px;
+  top: 107px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+._808-s-heartbreak-1 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 783px;
+  top: 107px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.kanyewest-collegedropout-1 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 1103px;
+  top: 107px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.igor-tyler-the-creator-1 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 143px;
+  top: 528px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.mbdtf-alt-1 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 463px;
+  top: 528px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.drake-certified-lover-boy-1 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 786px;
+  top: 528px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.travis-scott-utopia-1 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 1103px;
+  top: 528px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.ready-to-die-by-the-notorious-b-i-g {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 165px;
+  top: 438px;
+  width: 257px;
+  height: 51px;
+}
+.igor-by-tyler-the-creator {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 131px;
+  top: 856px;
+  width: 325px;
+  height: 53px;
+}
+.mbdtf-by-kanye-west {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 451px;
+  top: 857px;
+  width: 325px;
+  height: 53px;
+}
+.certified-lover-boy-by-drake {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 774px;
+  top: 860px;
+  width: 325px;
+  height: 51px;
+}
+.utopia-by-travis-scott {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 1090px;
+  top: 860px;
+  width: 325px;
+  height: 52px;
+}
+._808-s-heartbreak-by-kanye-west {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 831px;
+  top: 436px;
+  width: 214px;
+  height: 51px;
+}
+.the-college-dropout-by-kanye-west {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 1143px;
+  top: 439px;
+  width: 229px;
+  height: 51px;
+}
+.raising-hell-by-run-d-m-c {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 485px;
+  top: 438px;
+  width: 227px;
+  height: 51px;
+}
+._1980 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 27px;
+  top: 201px;
+  width: 97px;
+  height: 85px;
+  -webkit-text-stroke: 1px #000000;
+}
+.period {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 21px;
+  top: 62px;
+  width: 110px;
+  height: 48px;
+  -webkit-text-stroke: 1px #000000;
+}
+._1990 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 27px;
+  top: 348px;
+  width: 97px;
+  height: 32px;
+  -webkit-text-stroke: 1px #000000;
+}
+._2000 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 27px;
+  top: 499px;
+  width: 97px;
+  height: 31px;
+  -webkit-text-stroke: 1px #000000;
+}
+._2010 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 28px;
+  top: 647px;
+  width: 97px;
+  height: 112px;
+  -webkit-text-stroke: 1px #000000;
+}
+._2020 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 28px;
+  top: 802px;
+  width: 97px;
+  height: 84px;
+  -webkit-text-stroke: 1px #000000;
+}
+.home {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 293px;
+  top: 41px;
+  width: 99px;
+  height: 40px;
+}
+.rectangle-1 {
+  background: rgba(14, 14, 14, 0);
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px;
+  width: 99px;
+  height: 42px;
+  position: absolute;
+  left: 293px;
+  top: 41px;
+}
+.refresh {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 1103px;
+  top: 41px;
+  width: 132px;
+  height: 40px;
+}
+.rectangle-2 {
+  background: rgba(14, 14, 14, 0);
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px;
+  width: 126px;
+  height: 42px;
+  position: absolute;
+  left: 1106px;
+  top: 40px;
+}
+._color{
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 28px;
+  top: 950px;
+  width: 97px;
+  height: 112px;
+  -webkit-text-stroke: 1px #000000;
+}
+._White{
+  color: #ffffff;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 220px;
+  top: 955px;
+  width: 227px;
+  height: 51px;
+}
+._Black{
+  color: #ffffff;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 450px;
+  top: 955px;
+  width: 227px;
+  height: 51px;
+}
+._Red{
+  color: #ffffff;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 670px;
+  top: 955px;
+  width: 227px;
+  height: 51px;
+}
+._Pink{
+  color: #ffffff;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 880px;
+  top: 955px;
+  width: 227px;
+  height: 51px;
+}
+._Yellow{
+  color: #ffffff;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 1090px;
+  top: 955px;
+  width: 227px;
+  height: 51px;
+}
+._Blue{
+  color: #ffffff;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  left: 1290px;
+  top: 955px;
+  width: 227px;
+  height: 51px;
+}
+
+
+._White:hover{
+  color: white;
+}
+._Black:hover{
+  color: black;
+}
+._Red:hover{
+  color: red;
+}
+._Pink:hover{
+  color: pink;
+}
+._Yellow:hover{
+  color: yellow;
+}
+._Blue:hover{
+  color: rgb(75, 129, 217);
+}
+.change:hover{
+  color: red;
+  font-size: 35px;
+}
+.i-phone-11-pro-x-2{
+  display: none;
+}
+img:hover{
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 500px) {
+  .desktop{
+    display: none;
+  }
+  .i-phone-11-pro-x-2{
+    display: block;
+  }
+  .i-phone-11-pro-x-2,
+.i-phone-11-pro-x-2 * {
+  box-sizing: border-box;
+}
+.i-phone-11-pro-x-2 {
+  background: #383838;
+  height: 812px;
+  position: relative;
+  overflow: hidden;
+}
+.album-store {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  position: absolute;
+  left: 43px;
+  top: 27px;
+  width: 300px;
+  height: 68px;
+  -webkit-text-stroke: 2px #000000;
+}
+.home-page {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: 15px;
+  top: 123px;
+  width: 108px;
+  height: 27px;
+  -webkit-text-stroke: 1px #000000;
+}
+.refresh {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: 300px;
+  top: 123px;
+  width: 70px;
+  height: 27px;
+  -webkit-text-stroke: 1px #000000;
+}
+.ready-to-die-2 {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 84px;
+  top: 173px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.raising-hell-run-dmc-album-cover-art-1 {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 246px;
+  top: 173px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.igor-tyler-the-creator-2 {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 84px;
+  top: 320px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.mbdtf-alt-2 {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 246px;
+  top: 320px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.drake-certified-lover-boy-2 {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 84px;
+  top: 467px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.travis-scott-utopia-2 {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 246px;
+  top: 467px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.kanyewest-collegedropout-2 {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 84px;
+  top: 614px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+._808-s-heartbreak-2 {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 246px;
+  top: 614px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.period {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: 11px;
+  top: 203px;
+  width: 58px;
+  height: 30px;
+  -webkit-text-stroke: 1px #000000;
+}
+._1980 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: 15px;
+  top: 287px;
+  width: 79px;
+  height: 60px;
+  -webkit-text-stroke: 1px #000000;
+}
+._2020 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: 15px;
+  top: 656px;
+  width: 79px;
+  height: 60px;
+  -webkit-text-stroke: 1px #000000;
+}
+._2010 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: 15px;
+  top: 557px;
+  width: 79px;
+  height: 81px;
+  -webkit-text-stroke: 1px #000000;
+}
+._2000 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: 15px;
+  top: 464px;
+  width: 79px;
+  height: 76px;
+  -webkit-text-stroke: 1px #000000;
+}
+._1990 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: 15px;
+  top: 373px;
+  width: 79px;
+  height: 73px;
+  -webkit-text-stroke: 1px #000000;
+}
+.color {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: 17px;
+  top: 751px;
+  width: 54px;
+  height: 48px;
+  -webkit-text-stroke: 1px #000000;
+}
+.white {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: 111px;
+  top: 751px;
+  width: 60px;
+  height: 48px;
+  -webkit-text-stroke: 1px #000000;
+}
+.white:hover{
+  color: white;
+}
+.red {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: 325px;
+  top: 751px;
+  width: 60px;
+  height: 48px;
+  -webkit-text-stroke: 1px #000000;
+}
+.red:hover{
+  color: red;
+}
+.black {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: 217px;
+  top: 751px;
+  width: 60px;
+  height: 48px;
+  -webkit-text-stroke: 1px #000000;
+}
+.black:hover{
+  color: black;
+}
+.pink {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: 59px;
+  top: 775px;
+  width: 64px;
+  height: 48px;
+  -webkit-text-stroke: 1px #000000;
+}
+.pink:hover{
+  color:pink;
+}
+.yellow {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: 174px;
+  top: 775px;
+  width: 64px;
+  height: 48px;
+  -webkit-text-stroke: 1px #000000;
+}
+.yellow:hover{
+  color:yellow;
+}
+.blue {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Futura-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: 291px;
+  top: 775px;
+  width: 64px;
+  height: 48px;
+  -webkit-text-stroke: 1px #000000;
+}
+.blue:hover{
+  color: rgb(75, 129, 217);
+}
+.ch:hover{
+  color: red;
+  font-size: 20px;
+}
+}
